@@ -1,0 +1,16 @@
+{
+  "name": "tchinese-pixel-font",
+  "displayName": "TChinese Pixel Font",
+  "description": "Pixel font for Traditional Chinese in Aseprite",
+  "version": "1.0",
+  "author": { "name": "SiderealArt", "email": "contact@siderealart.me", "url": "http://siderealart.me" },
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      { "id": "tchinese-pixel-font", "path": "." }
+    ]
+  }
+}
