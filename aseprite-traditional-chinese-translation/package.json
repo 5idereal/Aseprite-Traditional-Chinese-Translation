@@ -1,15 +1,23 @@
 {
-    "name": "aseprite-traditional-chinese-translation",
-    "displayName": "Aseprite Traditional Chinese Translation",
-    "description": "Translation to Traditional Chinese by SiderealArt",
-    "version": "1.0",
-    "author": { "name": "SiderealArt", "url": "https://siderealart.me" },
-    "categories": [
-      "Languages"
-    ],
-    "contributes": {
-      "languages": [
-        { "id": "zh-tw", "path": "./zh-tw.ini" }
-      ]
-    }
+  "name": "aseprite-traditional-chinese-translation",
+  "displayName": "Aseprite Traditional Chinese Translation",
+  "description": "Translation to Traditional Chinese by SiderealArt",
+  "version": "1.0",
+  "author": {
+    "name": "SiderealArt",
+    "url": "https://siderealart.me"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "zh-Hant",
+        "path": "./zh-hant.ini",
+        "englishName": "Chinese (Traditional)",
+        "displayName": "中文（繁體）"
+      }
+    ]
   }
+}
