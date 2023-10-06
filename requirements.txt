@@ -1,1 +1,1 @@
-aseprite-ini==0.0.2
+aseprite-ini==0.0.3
