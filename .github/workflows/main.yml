@@ -1,0 +1,19 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Build
+        run: python ./build.py
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./build/releases/*.aseprite-extension
