@@ -4,7 +4,7 @@ import os
 from aseprite_ini import Aseini
 
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('format')
+logger = logging.getLogger('update')
 
 project_root_dir = os.path.dirname(__file__)
 strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
@@ -12,8 +12,7 @@ data_dir = os.path.join(project_root_dir, 'data')
 
 
 def main():
-    strings_en = Aseini.pull_strings('v1.3-rc6')
-    strings_en.fallback(Aseini.pull_strings('v1.2.40'))
+    strings_en = Aseini.pull_strings('v1.3-rc8')
     strings_en.save(os.path.join(strings_dir, 'en.ini'))
     logger.info("Update strings: 'en.ini'")
 
