@@ -12,7 +12,7 @@ data_dir = os.path.join(project_root_dir, 'data')
 
 
 def main():
-    strings_en = Aseini.pull_strings('d5a54d8de770e4d9752a71018f74af850402298b')
+    strings_en = Aseini.pull_strings('main')
     strings_en.save(os.path.join(strings_dir, 'en.ini'))
     logger.info("Update strings: 'en.ini'")
 
